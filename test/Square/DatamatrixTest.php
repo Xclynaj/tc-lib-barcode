@@ -155,6 +155,7 @@ class DatamatrixTest extends TestUtil
                 .'Wel91ih727kldinPeHJCjhr7fIBX1KQQfsN7BFMX00nlS8FlZG+',
                 'b2f0d45920c7da5b298bbab5cff5d402'
             ),
+            array('DATAMATRIX', '-=-1-=-2-=-3', '75c6038d90476cec641ad07690989b36'),
             // Square
             array(
                 'DATAMATRIX,S',
