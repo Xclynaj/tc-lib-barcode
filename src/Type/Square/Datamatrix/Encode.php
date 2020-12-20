@@ -145,8 +145,6 @@ class Encode extends \Com\Tecnick\Barcode\Type\Square\Datamatrix\EncodeTxt
             $this->last_enc = $enc;
         }
         // encodes four data characters in three codewords
-        $cdw[] = (($temp_cw[0] & 0x3F) << 2) + (($temp_cw[1] & 0x30) >> 4);
-        $cdw_num++;
         if ($field_length > 2) {
             $cdw[] = (($temp_cw[0] & 0x3F) << 2) + (($temp_cw[1] & 0x30) >> 4);
             $cdw[] = (($temp_cw[1] & 0x0F) << 4) + (($temp_cw[2] & 0x3C) >> 2);
