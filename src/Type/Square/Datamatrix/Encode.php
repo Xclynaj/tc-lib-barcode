@@ -135,14 +135,9 @@ class Encode extends \Com\Tecnick\Barcode\Type\Square\Datamatrix\EncodeTxt
         }
         if ($field_length < 4) {
             $enc = Data::ENC_ASCII;
-            $params = Data::getPaddingSize($this->shape, ($cdw_num + $field_length + ($data_length - $epos)));
-            if (($params[11] - $cdw_num) > 2) {
-                // set unlatch character
-                $temp_cw[] = 0x1f;
-                ++$field_length;
-            } else {
-                return true;
-            }
+            // set unlatch character
+            $temp_cw[] = 0x1f;
+            ++$field_length;
             // fill empty characters
             for ($i = $field_length; $i < 4; ++$i) {
                 $temp_cw[] = 0;
