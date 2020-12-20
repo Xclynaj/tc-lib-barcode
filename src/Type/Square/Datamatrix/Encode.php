@@ -124,7 +124,7 @@ class Encode extends \Com\Tecnick\Barcode\Type\Square\Datamatrix\EncodeTxt
      */
     public function encodeEDFfour($epos, &$cdw, &$cdw_num, &$pos, &$data_length, &$field_length, &$enc, &$temp_cw)
     {
-        if (($epos == $data_length)) {
+        if ($epos == $data_length) {
             $enc = Data::ENC_ASCII;
             $params = Data::getPaddingSize($this->shape, ($cdw_num + $field_length));
             if (($params[11] - $cdw_num) > 2) {
