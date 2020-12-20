@@ -158,7 +158,7 @@ class DatamatrixTest extends TestUtil
             array('DATAMATRIX', '-=-1-=-2-=-3', '75c6038d90476cec641ad07690989b36'),
             array('DATAMATRIX', '-=-1-=-2-=-3-', 'a63372ce839b51294964f0da0ae0f9f9'),
             array('DATAMATRIX', '-=-1-=-2-=-3x', 'f020e44d0926d17af7eb21febdb38d53'),
-            array('DATAMATRIX', '-=-1-=-2-=-3-xy', 'f65ab07c374c53e2a93016776041de42'),
+            array('DATAMATRIX', '-=-1-=-2-=-3-=x', '7a30efdf7616397a1ea2fd5fd95fed2c'),
             array('DATAMATRIX', '-=-1-=-2-=-3xyz', '17420fbffefddb5f1b8abd0d05de724d'),
             // Square
             array(
