@@ -89,7 +89,6 @@ class DatamatrixTest extends TestUtil
     public function getGridDataProvider()
     {
         return array(
-            array('DATAMATRIX', '0&0&0&0&0&0&_', 'fffdfdaec33af0788d24cdfa8cba5ac6'),
             array('DATAMATRIX', '0&0&0&0&0&0&0', '10d0faf5a6e7b71829f268218df7e6af'),
             array('DATAMATRIX', '(400)BS2WZ64PA(00)0', '9cb7f1c2aa5989909229ef8e4252d61d'),
             array('DATAMATRIX', '(400)BS2WZ64QA(00)0', '0494f709138a1feef5a1c9f14852dbe5'),
