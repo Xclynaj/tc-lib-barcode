@@ -89,8 +89,7 @@ class DatamatrixTest extends TestUtil
     public function getGridDataProvider()
     {
         return array(
-            array('DATAMATRIX', '0&0&0&0&0&0&_', 'fffdfdaec33af0788d24cdfa8cba5ac6'),
-            array('DATAMATRIX', '0&0&0&0&0&0&0', '10d0faf5a6e7b71829f268218df7e6af'),
+            array('DATAMATRIX', '0&0&0&0&0&0&_', '10d0faf5a6e7b71829f268218df7e6af'),
             array('DATAMATRIX', '(400)BS2WZ64PA(00)0', '9cb7f1c2aa5989909229ef8e4252d61d'),
             array('DATAMATRIX', '(400)BS2WZ64QA(00)0', '0494f709138a1feef5a1c9f14852dbe5'),
             array('DATAMATRIX', 'LD2B 1 CLNGP', 'f806889d1dbe0908dcfb530f86098041'),
@@ -155,6 +154,10 @@ class DatamatrixTest extends TestUtil
                 .'Wel91ih727kldinPeHJCjhr7fIBX1KQQfsN7BFMX00nlS8FlZG+',
                 'b2f0d45920c7da5b298bbab5cff5d402'
             ),
+            array('DATAMATRIX', '-=-1-=-2-=-3', '75c6038d90476cec641ad07690989b36'),
+            array('DATAMATRIX', '-=-1-=-2-=-3-', 'a63372ce839b51294964f0da0ae0f9f9'),
+            array('DATAMATRIX', '-=-1-=-2-=-3x', 'f020e44d0926d17af7eb21febdb38d53'),
+            array('DATAMATRIX', '-=-1-=-2-=-3-=x', '7a30efdf7616397a1ea2fd5fd95fed2c'),
             // Square
             array(
                 'DATAMATRIX,S',
