@@ -150,15 +150,11 @@ class Encode extends \Com\Tecnick\Barcode\Type\Square\Datamatrix\EncodeTxt
             $this->last_enc = $enc;
         }
         // encodes four data characters in three codewords
-        $cdw[] = (($temp_cw[0] & 0x3F) << 2) + (($temp_cw[1] & 0x30) >> 4);
-        $cdw_num++;
-        if ($field_length > 1) {
-            $cdw[] = (($temp_cw[1] & 0x0F) << 4) + (($temp_cw[2] & 0x3C) >> 2);
-            $cdw_num++;
-        }
         if ($field_length > 2) {
+            $cdw[] = (($temp_cw[0] & 0x3F) << 2) + (($temp_cw[1] & 0x30) >> 4);
+            $cdw[] = (($temp_cw[1] & 0x0F) << 4) + (($temp_cw[2] & 0x3C) >> 2);
             $cdw[] = (($temp_cw[2] & 0x03) << 6) + ($temp_cw[3] & 0x3F);
-            $cdw_num++;
+            $cdw_num += 3;
         }
         $temp_cw = array();
         $pos = $epos;
